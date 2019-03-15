@@ -14,7 +14,7 @@ using DbUp.Engine; //Required for ScriptOptions
 
 namespace DbUpClassLibrary.DataAccessComponent
 {
-    class DAC
+    public class DAC
     {
         public void CreateDatabaseIfNotExists(string DatabaseName, string masterDBConnectionString, string ProjectDirectory, ref StringBuilder sbLog)
         {
