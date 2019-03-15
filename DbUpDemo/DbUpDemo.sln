@@ -5,6 +5,15 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUpDemo", "DbUpDemo\DbUpDemo.csproj", "{E47F495C-DD2B-4F62-96CD-3F1AC5F07047}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowershellScripts", "PowershellScripts", "{E561F1D7-361A-40FD-A5EA-14CED249AB4B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TeamCity", "TeamCity", "{EA195B5D-D051-491D-B641-395C885850DB}"
+	ProjectSection(SolutionItems) = preProject
+		UpdateTeamCityBuildNumber.ps1 = UpdateTeamCityBuildNumber.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUpClassLibrary", "DbUpClassLibrary\DbUpClassLibrary.csproj", "{B1690726-BEDD-4A48-8C67-EFF2B87E0616}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +24,16 @@ Global
 		{E47F495C-DD2B-4F62-96CD-3F1AC5F07047}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E47F495C-DD2B-4F62-96CD-3F1AC5F07047}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E47F495C-DD2B-4F62-96CD-3F1AC5F07047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1690726-BEDD-4A48-8C67-EFF2B87E0616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1690726-BEDD-4A48-8C67-EFF2B87E0616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1690726-BEDD-4A48-8C67-EFF2B87E0616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1690726-BEDD-4A48-8C67-EFF2B87E0616}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA195B5D-D051-491D-B641-395C885850DB} = {E561F1D7-361A-40FD-A5EA-14CED249AB4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50CBBBDB-210A-4777-84B0-12CA04CF4A49}

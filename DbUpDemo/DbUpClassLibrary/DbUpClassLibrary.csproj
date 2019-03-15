@@ -47,12 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogicComponent\BLC.cs" />
+    <Compile Include="Common\Common.cs" />
     <Compile Include="DataAccessComponent\DAC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Common\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
