@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E47F495C-DD2B-4F62-96CD-3F1AC5F07047}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DbUpDemo</RootNamespace>
-    <AssemblyName>DbUpDemo</AssemblyName>
+    <RootNamespace>WorldWideImportersDW</RootNamespace>
+    <AssemblyName>WorldWideImportersDW</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

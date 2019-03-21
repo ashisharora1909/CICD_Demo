@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUpDemo", "DbUpDemo\DbUpDemo.csproj", "{E47F495C-DD2B-4F62-96CD-3F1AC5F07047}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldWideImportersDW", "DbUpDemo\WorldWideImportersDW.csproj", "{E47F495C-DD2B-4F62-96CD-3F1AC5F07047}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowershellScripts", "PowershellScripts", "{E561F1D7-361A-40FD-A5EA-14CED249AB4B}"
 EndProject
