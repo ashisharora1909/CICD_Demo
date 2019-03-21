@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.IO; //required for FileStream class
+using System.Net;
 using System.Net.Mail; //required for MailMessage class
 
 namespace DbUpClassLibrary.Common
@@ -106,7 +107,15 @@ namespace DbUpClassLibrary.Common
             if (Subject.ToUpper().Contains("ACTION REQUIRED"))
                 mailMessage.Priority = MailPriority.High;
 
-            SmtpClient emailClient = new SmtpClient(SMTPHostName, SMTPPortNumber);
+            string password = "XXXXXXputpasswordhereXXXXX";
+            SmtpClient emailClient = new SmtpClient{
+                                                        Host = SMTPHostName,
+                                                        Port = SMTPPortNumber,
+                                                        EnableSsl = true,
+                                                        DeliveryMethod = SmtpDeliveryMethod.Network,
+                                                        UseDefaultCredentials = false,
+                                                        Credentials = new NetworkCredential(FromEmailAddress.Trim(), password.Trim())
+                                                    };
 
             emailClient.Send(mailMessage);
 
@@ -118,13 +127,21 @@ namespace DbUpClassLibrary.Common
 
         public void SendEmail(string message)
         {
+          
             string mailSubject = string.Empty;
             string mailBody = string.Empty;
+            string password = "XXXXXXputpasswordhereXXXXX";
             mailSubject = "**Errors** occurred during deployment automation";
             mailBody = message;
             string emailRecipients = ToEmailAddress;
             MailMessage mailMessage = new MailMessage(FromEmailAddress, emailRecipients, mailSubject, mailBody);
-            SmtpClient emailClient = new SmtpClient(SMTPHostName, SMTPPortNumber);
+            SmtpClient emailClient = new SmtpClient { Host = SMTPHostName,
+                                                      Port =  SMTPPortNumber,
+                                                      EnableSsl = true,
+                                                      DeliveryMethod= SmtpDeliveryMethod.Network,
+                                                      UseDefaultCredentials=false,
+                                                      Credentials = new NetworkCredential(FromEmailAddress.Trim(),password.Trim())
+                                                     };
             emailClient.Send(mailMessage);
 
             mailMessage.Dispose();

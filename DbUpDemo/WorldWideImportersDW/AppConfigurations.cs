@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using System.Configuration;
 
-namespace DbUpDemo
+namespace WorldWideImportersDW
 {
     class AppConfigurations
     {
@@ -70,7 +70,7 @@ namespace DbUpDemo
         {
             get
             {
-                return ConfigurationManager.AppSettings["TargetDBConnectionString"];
+                return ConfigurationManager.ConnectionStrings["TargetDBConnectionString"].ToString();
             }
         }
 

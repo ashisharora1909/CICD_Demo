@@ -12,7 +12,7 @@ using DbUpClassLibrary.BusinessLogicComponent;
 
 
 
-namespace DbUpDemo
+namespace WorldWideImportersDW
 {
     class Program
     {
@@ -59,8 +59,8 @@ namespace DbUpDemo
             common.WriteToLog(sbLog.ToString(), logFilePath);
             common.ProcessEmail(hasDeploymentErrors, logFilePath, targetDBName, targetServerName);
 
-            //sleep for 10 seconds before closing the console so that you can inspect the log messages in the console
-            System.Threading.Thread.Sleep(10000);
+            //sleep for 5 seconds before closing the console so that you can inspect the log messages in the console
+            System.Threading.Thread.Sleep(5000);
 
             Environment.Exit(exitCode);
 
